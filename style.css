@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: #09090b;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     background-color: black;
+    backdrop-filter:blur(10px);
+    line-height: 20px;
+    padding: 15px 30px;
+    top:0;
+    z-index: 1000;
+    border-bottom: 1px solid #1f1f1f;
+    box-sizing: border-box;
+    width: 100%;
+}
+.logo{
+    height: 20px;
+
+}
+.logo-text{
+    color:aliceblue; 
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin:0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap:30px;
+ margin: 0;
+    padding:0; 
+}
+
+.nav-links ul{
+    display: flex;
+ list-style: none;
+gap:25px;
+margin: 0;
+padding: 0;
+}
+
+.nav-links a{
+    display: flex;
+color: bisque;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s ease;
+text-transform: uppercase;
+}
+.nav-right{
+    display: flex;
+    gap:1.2rem;
+}
+.btn-primary{
+background-color: rgb(137, 137, 153);
+height: 2rem;
+width: 6rem;
+border-radius: 20px;
+padding: 3%;
+color:white;
+text-align: center;
+justify-content: center;
+text-decoration: none;
+}
+.toggle-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height:38px;
+    background:none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #374151;padding: 8px 12px;
+     border: 2px solid rgb(235, 177, 177);
+    border-radius: 50%; 
+    transition:  0.3s ease;
+}
+body.darkmode{
+    background-color: #e5e9f4;
+    color: #f8fafc;
+}
+body.darkmode .navbar{
+    background-color: #111e34;
+    border-bottom: 1px solid #334155;
+}
